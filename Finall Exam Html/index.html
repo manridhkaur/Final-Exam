@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- adding meta -->
+    <meta charset="UTF-8">                     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="MANRIDH'S WEBSITE" content="HTML FINAL EXAM">
@@ -16,28 +17,32 @@
 </head>
 <body>
     <header>
-        <div>
-			<a href="index.html"><img src="./Img/sample-logo.png" alt="sample logo"></a>        <!--logo image-->
-		</div>
-		<nav>
-			<menu>
-				<li><a href="index.html">Home</a></li>
-                <li>|</li>       
-				<li><a href="about.html">About</a></li>             <!--about page-->
+        <nav>
+            <!-- styling nav  -->
+            <!-- adding logo  -->
+            <div class="logo">                                            
+                <img src="./Img/sample-logo.png" alt=" sample logo">
+            </div>
+            <ul class="menu">
+                <!-- linking other html files  -->
+                <li><a href="home.html">HOME</a></li>     <!--home page-->
                 <li>|</li>
-				<li><a href="#contact">Contact</a></li>          <!--Contact information-->
-               
-                <li>
-                    <form action="#" method="get">
-                     <input type="search" placeholder="Search...">   <!--search bar-->
-                   </form>
-               </li>             
-			</menu>
-		</nav>
-	</header>
+                <li><a href="about.html">ABOUT</a></li>   <!--about page-->
+                <li>|</li>
+                <li><a href="contact.html">CONTACT</a></li>   <!--contact page-->
+            </ul>
+            <!-- inserting a search container  -->
+            <div class="search-container">
+                    <form>
+                        <input type="search" placeholder="Search">
+                    </form>
+            </div>
+    
+        </nav>   <!--closing nav-->
+    </header>
     <section>             <!--section for the home image-->
         <div class="container">
-            <img src="./Img/img1.jpg" alt="Image below text">
+            <img src="./Img/img1.jpg" alt="Image below text">   <!--image 1-->
             <div class="overlay">
                 <h1>HTML, CSS, JS FUND. FINAL EXAM</h1>  <!--text on the image-->
             </div>  
@@ -45,39 +50,72 @@
 </section>
     <section class="text">        <!--adding text-->
         <div class="text-container">       <!--making a container for the css-->
+            <!-- adding title  -->
             <h2>I Am A Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet bibendum mauris, ut ultricies felis. Nulla facilisi.</p>
         </div>
         <div class="image-container">      <!--adding the another image-->
-            <img src="./Img/img2.jpg" alt="River">
+            <img src="./Img/img2.jpg" alt="River">  <!--image 2-->
         </div>
 </section>
-<div id="loginpage">
-    <div class="loginbox">          
-        <form>
-            <p>Name</p>
-            <input type="text" name="Name" placeholder="Enter NAME">
-            <p>Email</p>
-            <input type="email" name="Email" placeholder="Enter Email">
-            <p>Password</p>
-            <input type="password" name="Password" placeholder="Enter Password"><br>
-            <input name="boolean-parameter" type="checkbox" value="true" />
-            <input name="boolean-parameter" type="hidden" value="false" />
-            <label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-           
-        </form>
+<section class="image-grid">   <!--image grid section-->
+    <div class="image-series">
+        <img src="./Img/img5.jpg" alt="Image 1">   <!--image series 1-->
     </div>
-</div>
+    <div class="image-series">
+        <img src="./Img/img4.jpg" alt="Image 2"> <!--image series 2-->
+    </div>
+    <div class="image-series">
+        <img src="./Img/img3.jpg" alt="Image 3"> <!--image series 3-->
+    </div>
+</section>
+<section class="login-segment">   <!--login section-->
+    <form>
+        <div class="login-group">
+            <input type="text" id="name" name="name" placeholder="Name" required>   <!-- name-->
+        </div>
+
+        <div class="login-group">
+            <input type="email" id="email" name="email" placeholder="Email" required> <!--email-->
+        </div>
+
+        <div class="login-group">
+            <input type="password" id="password" name="password" placeholder="Password" required> <!--password-->
+        </div>
+
+        <div class="login-group">
+            <p class="select-label">Pick One:</p>  <!--adding boolean-->
+            <div class="radio-group">
+                <label for="true-option" class="radio-label">   
+                    
+                    <input type="radio" id="true-option" name="pick-one" value="true">True   <!--true-->
+                </label>
+                
+                <label for="false-option" class="radio-label">
+                    <input type="radio" id="false-option" name="pick-one" value="false">False  <!--false-->
+                </label>
+                
+            </div>
+        </div>
+
+        <div class="login-group">    <!--message box-->
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Leave a message"></textarea>
+        </div>
+
+        <div class="login-group">
+            <input type="submit" value="Submit">   <!--submit button-->
+        </div>
+    </form>
+</section>
 <footer>
+    <!-- styling footer  -->
     <div class="col">
-        <img src="/Img/sample-logo.png" alt="logo" class="logo">
+        <img src="./Img/sample-logo.png" alt="logo" class="logo">
     </div>
     <div class="foot">
         <h3>Title</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ratione distinctio necessitatibus explicabo quidem nam! Architecto, officia magni. Ea labore modi inventore fugit nisi. Mollitia ducimus commodi nemo consequatur laudantium.</p>
     </div>
 </footer>
-    
-</body>
-</html>
+</body>   <!--body close-->
+</html>  <!--end of code-->

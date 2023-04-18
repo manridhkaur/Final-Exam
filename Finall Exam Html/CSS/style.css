@@ -1,50 +1,80 @@
+
+    
+
 body {
 	font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 	
 }
-header a{
-    text-decoration: none;
-    color: #f4f4f4; 
-}
-header nav a:hover{
-	color: #f57f17;
-}
 header {
-	background-color:#125784;
-	display: flex;
-    align-items: center;
-	width: auto;
-    height: 125px;
-    font-family:  Montserrat;
-}
-header div{
-	width: auto;
-    height: 115px;
-   
-}
-header nav menu li form{
-    float: right;
-}
-header div img{
-	width: auto;
-	height: 117px;
-    padding-left: 42px;
-}
-header div h1{
-    color: #f4f4f4;
-    font-size:23px;
+    background-color: #125784;
+    color: #fff;
+    padding: 1em;
 }
 
-header nav menu{
-	list-style: none;
+nav {
     display: flex;
-    margin: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header nav menu li{
-    color: white;
-	padding: 0px 40px;
+.logo {
+    flex: 0 0 auto;
 }
+
+.logo img {
+    height: 100px;
+}
+::placeholder{
+    font-weight: 600;
+    color: #000;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+
+
 .container {
     display: flex;
     width: 100%;
@@ -63,6 +93,7 @@ header nav menu li{
 }
 
 .overlay {
+    /* i tried to correct my error but I wasn't able to correct it completly  */
     background-color: rgba(0,0,0,0.5);
    height: 195px;
     border-radius: -23px;
@@ -99,3 +130,86 @@ h1 {
     flex: 4;
     padding-left: 60px;
 }
+
+.image-series{
+    flex: 1;
+}
+
+.image-series img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.login-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+.login-segment {
+    background-color: #5e35b1;
+    padding: 69px;
+    color: #000;
+}
+
+input[type="submit"] {
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #000;
+    color: white;
+}
+
+.select-label {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.radio-label {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.radio-group {
+
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 60px;
+}
+.foot h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.col {
+    margin-right: 20px;
+}
+
+.col img {
+    max-width: 100px;
+}
+
+/* thankyou! */
